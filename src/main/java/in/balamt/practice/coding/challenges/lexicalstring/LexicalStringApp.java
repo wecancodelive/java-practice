@@ -6,7 +6,8 @@ public class LexicalStringApp {
     public static void main(String[] args) {
         //Input as String array
         //String[] input = {"abc", "bac", "dbc"};
-        String[] input = {"abc", "edc", "deb"};
+        String[] input = {"dcc", "bac", "dac"};
+        //String[] input = {"abc", "edc", "deb"};
 
         String output = getLexicalSortedWord(input);
         System.out.println(output);

@@ -42,3 +42,40 @@ All indices match.
 ```
 Hint: Build the correct order of heights by sorting another array, then compare the two array
 ```
+
+---
+
+## Height Checker Logic
+
+1. **Clone the heights array**
+    - Create a copy of the original array to avoid modifying it.
+
+2. **Sort the cloned array**
+    - Sorting gives the expected order of students by height.
+
+3. **Compare both arrays**
+    - Loop through each index.
+    - If the value at an index in the original array does not match the sorted array, increment a counter.
+
+4. **Return the count**
+    - The counter represents the number of students not in the correct order.
+
+### Example
+
+Input: heights = [1, 1, 4, 2, 1, 3]
+
+- Sorted: expected = [1, 1, 1, 2, 3, 4]
+- Compare each index:
+    - Indices 2, 4, and 5 differ.
+- Output: 3
+
+
+### Time Complexity:
+- Cloning the array: \(O(n)\)
+- Sorting the array: \(O(n \log n)\)
+- Comparing arrays: \(O(n)\)  
+  **Total:** \(O(n \log n)\)
+
+### Space Complexity:
+- Extra array for sorting: \(O(n)\)  
+  **Total:** \(O(n)\)

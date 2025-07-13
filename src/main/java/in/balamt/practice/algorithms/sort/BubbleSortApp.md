@@ -2,6 +2,57 @@
 [Back to home](../../../../../../../../README.md)
 
 ----------------------------------------------------
+
+# Bubble Sort Algorithm
+
+Bubble sort is a simple way to sort a list of numbers. It works by repeatedly comparing pairs of numbers and swapping them if they are in the wrong order. This process continues until the list is sorted.
+
+## Why Sorting?
+
+Sorting helps organize data so it can be searched or processed more easily.
+
+## How Bubble Sort Works (Step-by-Step)
+
+1. Start at the beginning of the list.
+2. Compare each pair of adjacent numbers.
+3. If the first number is bigger, swap them.
+4. Repeat until no swaps are needed.
+
+### Example
+
+Original: 4 | 2 | 7 | 1
+
+First pass: 2 | 4 | 1 | 7  
+Second pass: 2 | 1 | 4 | 7  
+Third pass: 1 | 2 | 4 | 7
+
+## Pseudocode
+
+repeat swapped = false 
+for i = 0 to n-2 
+if list[i] > list[i+1] 
+swap(list[i], list[i+1]) 
+swapped = true until not swapped
+
+## Complexity
+
+- Time: O(n^2) (slow for large lists)
+- Space: O(1) (no extra memory needed)
+
+## Pros and Cons
+
+**Pros:**
+- Easy to understand
+- Simple to implement
+
+**Cons:**
+- Slow for large lists
+- Not used in real-world applications
+
+## Java Example
+
+See `BubbleSortApp.java` for a complete code example.
+
 Bubble sort is a simple sorting algorithm. This sorting algorithm is comparison-based, in which each pair of adjacent elements is compared, and the elements are swapped if they are not in order. This algorithm is not suitable for large data sets as its average and worst-case complexity are Ο(n^2), where n is the number of items.
 
 ```Performance degrades as the number of items grows.```
